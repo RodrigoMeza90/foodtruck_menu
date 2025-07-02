@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Estación - Menú</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/laestacion-icon.png" alt="Logo La Estación" class="logo">
+    <p>Descubre nuestro delicioso menú</p>
+  </header>
+
+  <main>
+    <section class="menu-page" id="page1">
+      <h2>Waffles</h2>
+      <img src="images/waffles-menu.jpg" alt="Waffles">
+    </section>
+
+    <section class="menu-page hidden" id="page2">
+      <h2>Churros y Helados</h2>
+      <img src="images/icecream-menu.jpg" alt="Churros y Helados">
+    </section>
+
+    <section class="menu-page hidden" id="page3">
+      <h2>Bebidas</h2>
+      <img src="images/drink-menu.jpg" alt="Bebidas">
+    </section>
+
+    <div class="pagination">
+      <button onclick="showPage(1)">1</button>
+      <button onclick="showPage(2)">2</button>
+      <button onclick="showPage(3)">3</button>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://wa.me/56937225932" target="_blank">
+      <img class="social-icon" src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/laestacion_cafeteriaywaffleria" target="_blank">
+      <img class="social-icon" src="images/instagram.png" alt="Instagram">
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
