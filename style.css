@@ -12,6 +12,15 @@ header {
   background-color: #e67e22;
   color: white;
   padding: 2rem 0;
+  transition: opacity 0.3s ease;
+}
+
+header.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 header p {
