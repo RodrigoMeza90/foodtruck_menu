@@ -29,6 +29,12 @@ header p {
 
 .menu-page {
   padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-page img,
@@ -77,26 +83,6 @@ header p {
   box-shadow: none !important;
   border: none;
   border-top: none;
-}
-
-#btn-inicio {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  z-index: 999;
-}
-
-#btn-inicio img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 0.2s ease-in-out;
-}
-
-#btn-inicio img:hover {
-  transform: scale(1.1);
 }
 
 .pagination button:hover {
@@ -152,19 +138,24 @@ footer {
   transform: scale(1.2);
 }
 
-.imagen-doble {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+#btn-inicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
 }
 
-.imagen-doble img {
-  width: 45%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
+#btn-inicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+#btn-inicio img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
@@ -173,5 +164,10 @@ footer {
     width: 100%;
     height: auto;
     max-height: 400px;
+  }
+
+  #btn-inicio {
+    width: 30px;
+    height: 30px;
   }
 }
